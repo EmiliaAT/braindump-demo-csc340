@@ -44,7 +44,6 @@ Table of Contents
 | ------------ | ------- | ----------------------- | --------- |
 | Sebastian F. | 5/26/25 | 2.3, 2.4, 3.2 completed | v0.0.1    |
 | Emilia T.    | 5/26/25 | Write 1. Introduction   | v0.0.2    |
-|              |         |                         |           |
 
 ## 1. Introduction
 
@@ -110,11 +109,6 @@ Summarize the major functions the product must perform or must let the user perf
 
 This subsection should provide a general description of any other items that will limit the developer’s options. These may include:  
 
-* Interfaces to users, other applications or hardware.  
-* Quality of service constraints.  
-* Standards compliance.  
-* Constraints around design or implementation.
-  
 ### 2.3 User Characteristics
 
 Identify the various user classes that you anticipate will use this product. User classes may be differentiated based on frequency of use, subset of product functions used, technical expertise, security or privilege levels, educational level, or experience. Describe the pertinent characteristics of each user class. Certain requirements may pertain only to certain user classes. Distinguish the most important user classes for this product from those who are less important to satisfy.
