@@ -2,7 +2,7 @@
 
 ## BrainDump
 
-**Version:** 0.0.3
+**Version:** 0.1.0
 
 **Prepared by:** Emilia Trickett, Sebastian Foreman
 
@@ -40,11 +40,12 @@ Table of Contents
 
 ## Revision History
 
-| Name         | Date    | Reason For Changes        | Version   |
-| ------------ | ------- | ------------------------- | --------- |
-| Sebastian F. | 5/26/25 | 2.3, 2.4, 3.2 completed   | v0.0.1    |
-| Emilia T.    | 5/26/25 | Write 1. Introduction     | v0.0.2    |
-| Emilia T.    | 5/26/25 | Write 2. Product Overview | v0.0.3    |
+| Name         | Date    | Reason For Changes                | Version   |
+| ------------ | ------- | --------------------------------- | --------- |
+| Sebastian F. | 5/26/25 | 2.3, 2.4, 3.2 completed           | v0.0.1    |
+| Emilia T.    | 5/26/25 | Write 1. Introduction             | v0.0.2    |
+| Emilia T.    | 5/26/25 | Write 2. Product Overview         | v0.0.3    |
+| Emilia T.    | 5/26/25 | Write 3.1 Functional Requirements | v0.1.0    |
 
 ## 1. Introduction
 
@@ -143,6 +144,15 @@ uploading articles from the disk. The project will be hosted on GitHub for versi
 
 ### 3.1 Functional Requirements
 
+1. Guests can create accounts using an e-mail (or possibly, a prior existing Google / GitHub account using OAuth).
+2. Users can sign into pre-existing accounts to access reader / writer privileges.
+3. All users including guests can browse public articles on a home page.
+4. All users can filter articles by tags or authors, and sort by metrics such as popularity.
+6. All users can download public articles as Markdown for offline use.
+5. Authenticated users can create private and public articles from inside the application.
+6. Authenticated users can create comments on articles, and review articles by liking them.
+7. Authenticated users can add articles and article series to curated collections, such as Favourites or Bookmarks.
+
 #### 3.1.1 User Interfaces
 
 Web pages using HTML, CSS, and TypeScript.
@@ -159,7 +169,7 @@ Devices that have web browser support.
 * TypeScript 5.8.3
 * React 19.1.0
 
-### 3.2 Non Functional Requirements 
+### 3.2 Non-Functional Requirements 
 
 #### 3.2.1 Performance
 
