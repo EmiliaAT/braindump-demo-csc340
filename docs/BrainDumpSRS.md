@@ -2,7 +2,7 @@
 
 ## BrainDump
 
-**Version:** 0.0.2
+**Version:** 0.0.3
 
 **Prepared by:** Emilia Trickett, Sebastian Foreman
 
@@ -40,10 +40,11 @@ Table of Contents
 
 ## Revision History
 
-| Name         | Date    | Reason For Changes      | Version   |
-| ------------ | ------- | ----------------------- | --------- |
-| Sebastian F. | 5/26/25 | 2.3, 2.4, 3.2 completed | v0.0.1    |
-| Emilia T.    | 5/26/25 | Write 1. Introduction   | v0.0.2    |
+| Name         | Date    | Reason For Changes        | Version   |
+| ------------ | ------- | ------------------------- | --------- |
+| Sebastian F. | 5/26/25 | 2.3, 2.4, 3.2 completed   | v0.0.1    |
+| Emilia T.    | 5/26/25 | Write 1. Introduction     | v0.0.2    |
+| Emilia T.    | 5/26/25 | Write 2. Product Overview | v0.0.3    |
 
 ## 1. Introduction
 
@@ -101,21 +102,42 @@ the product and development process. This section is intended for all stakeholde
 
 ## 2. Product Overview
 
+BrainDump is a knowledge sharing and storing platform for users to curate and share information. The platform
+prioritises being lightweight, simple, and accessible. All users and guests may read articles, while authenticated
+users may leave comments, create curated collections, and publish their own articles for others to see and share.
+
 ### 2.1 Product Functions
 
-Summarize the major functions the product must perform or must let the user perform. Details will be provided in Section 3, so only a high level summary (such as a bullet list) is needed here. Organize the functions to make them understandable to any reader of the SRS. A picture of the major groups of related requirements and how they relate, such as a top level data flow diagram or object class diagram, is often effective.
+Users can view, search, filter, and sort public articles on a discovery page. Users can curate articles by storing
+them in collections (such as the the preset Favourites and Bookmarks collections), and by following authors. Users
+can interact with public articles by commenting on them, sharing them, and liking them. All authenticated users
+can write private or public articles. Articles can be tagged to aid with search optimisation. Authors can create
+series of articles to organise information for readers. Articles can be saved for offline use as Markdown files.
+Collections and series can be saved as (zipped) directories of Markdown files. All metadata is also composed of
+plain-text formats, such as Markdown, JSON, TOML, and/or YAML.
 
 ### 2.2 Product Constraints
 
-This subsection should provide a general description of any other items that will limit the developer’s options. These may include:  
+The BrainDump server application requires Java JDK 21 to be installed in order to run. While all features should
+be realised, there is a tight deadline for all features so completion will be rushed, possibly leading to poor
+work quality where problems arise. This project is designed using free services, meaning that scalability would
+be a challenge if the project were to be continued.
 
 ### 2.3 User Characteristics
 
-Identify the various user classes that you anticipate will use this product. User classes may be differentiated based on frequency of use, subset of product functions used, technical expertise, security or privilege levels, educational level, or experience. Describe the pertinent characteristics of each user class. Certain requirements may pertain only to certain user classes. Distinguish the most important user classes for this product from those who are less important to satisfy.
+Users should know how to navigate a website, and to search and filter content in the way of typical social media
+platforms. Authors should understand how to write articles in Markdown. Users should be able to read the tutorial
+article provided by the platform to learn all of the features available to them. Guest users who have not signed in
+and authenticated themselves will only need to be able to read public articles, as they have no accounts to attach
+post, comment, and collection metadata to.
 
 ### 2.4 Assumptions and Dependencies
 
-List any assumed factors (as opposed to known facts) that could affect the requirements stated in the SRS. These could include third-party or commercial components that you plan to use, issues around the development or operating environment, or constraints. The project could be affected if these assumptions are incorrect, are not shared, or change. Also identify any dependencies the project has on external factors, such as software components that you intend to reuse from another project, unless they are already documented elsewhere (for example, in the vision and scope document or the project plan).
+This project will be written in Java using SpringBoot, and interfaces with external REST APIs such as OAuth.
+The project will be written in VS Code and Neovim. The frontend will be built using the React framework with
+TypeScript. The project may optionally depend on libraries for parsing file formats, such as ZIP, JSON, YAML, etc.
+The project optionally depends on file system sandboxing features for saving articles offline and potentially
+uploading articles from the disk. The project will be hosted on GitHub for version control management.
 
 ## 3. Requirements
 
