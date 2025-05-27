@@ -1,8 +1,10 @@
 # Software Requirements Specification
 ## For BrainDump
 
-Version 0.1  
-Prepared by Emilia Trickett and Sebastian Foreman UNCG CSC-340 5/26/2025
+Version 0.0.1
+Prepared by Emilia Trickett and Sebastian Foreman
+UNCG CSC-340
+5/25/2025
 
 Table of Contents
 =================
@@ -33,17 +35,22 @@ Table of Contents
     * 3.2.7 [Deadline](#327-deadline)
 
 ## Revision History
-| Name | Date    | Reason For Changes  | Version   |
-| ---- | ------- | ------------------- | --------- |
-|  Sebastian F    |    5/26     |  2.3,2.4,3.2 completed |  v0.1  |
-|      |         |                     |           |
-|      |         |                     |           |
+| Name         | Date    | Reason For Changes      | Version   |
+| ------------ | ------- | ----------------------- | --------- |
+| Sebastian F. | 5/26/25 | 2.3, 2.4, 3.2 completed | v0.0.1    |
+|              |         |                         |           |
+|              |         |                         |           |
 
 ## 1. Introduction
 
 ### 1.1 Document Purpose
 
+Describe the purpose of the SRS and its intended audience.
+
 ### 1.2 Product Scope
+
+Identify the product whose software requirements are specified in this document, including the revision or release number. Explain what the product that is covered by this SRS will do, particularly if this SRS describes only part of the system or a single subsystem. 
+Provide a short description of the software being specified and its purpose, including relevant benefits, objectives, and goals. Relate the software to corporate goals or business strategies. If a separate vision and scope document is available, refer to it rather than duplicating its contents here.
 
 ### 1.3 Definitions, Acronyms and Abbreviations                                                                                                                                                                          |
 
@@ -58,23 +65,25 @@ Table of Contents
 ### 2.2 Product Constraints
 
 ### 2.3 User Characteristics
+
 Users will be divided into two different roles: authors or readers.
 Authors will publish content and readers will comment upon that content.
 
 ### 2.4 Assumptions and Dependencies
+
 The application is dependent upon third party hosting of PostgreSQL providing interactive response times over the open internet.
 
 ## 3. Requirements
 
 ### 3.1 Functional Requirements 
 
-#### 3.1.1 User interfaces
+#### 3.1.1 User Interfaces
 Web pages using HTML, CSS, and JavaScript.
 
-#### 3.1.2 Hardware interfaces
+#### 3.1.2 Hardware Interfaces
 Devices that have web browser capabilities.
 
-#### 3.1.3 Software interfaces
+#### 3.1.3 Software Interfaces
 - Java jdk 21
 - PostgreSQL 17
 - SpringBoot 3.4.5
