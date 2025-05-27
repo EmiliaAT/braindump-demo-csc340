@@ -1,8 +1,8 @@
 # Software Requirements Specification
 ## For BrainDump
 
-Version 0.1  
-Prepared by Emilia Trickett
+Version 0.0.1 
+Prepared by Emilia Trickett, Sebastian Foreman
 UNCG CSC-340
 5/25/2025
 
@@ -35,22 +35,37 @@ Table of Contents
     * 3.2.7 [Deadline](#327-deadline)
 
 ## Revision History
-| Name | Date    | Reason For Changes  | Version   |
-| ---- | ------- | ------------------- | --------- |
-|      |         |                     |           |
-|      |         |                     |           |
-|      |         |                     |           |
+
+| Name            | Date      | Reason For Changes    | Version   |
+| --------------- | --------- | --------------------- | --------- |
+| Emilia Trickett | 5/26/2025 | Write 1. Introduction | 0.0.1     |
+|                 |           |                       |           |
+|                 |           |                       |           |
 
 ## 1. Introduction
 
 ### 1.1 Document Purpose
-Describe the purpose of the SRS and its intended audience.
+
+The purpose for the Software Requirements Specification is to describe the guest, user, and author client
+requirements for the BrainDump web application.
+
+Guest-oriented requirements describe the system from the guest user's perspective. Guest users are those who visit
+the BrainDump site without signing in and authenticating. All other user roles share the same capabilities as guests.
+
+User-oriented requirements describe the system from the authenticated user's perspective. All users have access to
+everything that guests can do, as well as being able to contribute to the system. Furthermore, while all users have
+the ability to be authors, the user role is being defined as it is to support the larger project specification.
+
+Author-oriented requirements describe the system from the authenticated author's perspective. While all users have
+access to author capabilities, the author role is defined to demonstrates what requirements must be set in place
+to support authorship features for the application.
 
 ### 1.2 Product Scope
+
 Identify the product whose software requirements are specified in this document, including the revision or release number. Explain what the product that is covered by this SRS will do, particularly if this SRS describes only part of the system or a single subsystem. 
 Provide a short description of the software being specified and its purpose, including relevant benefits, objectives, and goals. Relate the software to corporate goals or business strategies. If a separate vision and scope document is available, refer to it rather than duplicating its contents here.
 
-### 1.3 Definitions, Acronyms and Abbreviations                                                                                                                                                                          |
+### 1.3 Definitions, Acronyms and Abbreviations
 
 ### 1.4 References
 List any other documents or Web addresses to which this SRS refers. These may include user interface style guides, contracts, standards, system requirements specifications, use case documents, or a vision and scope document. Provide enough information so that the reader could access a copy of each reference, including title, author, version number, date, and source or location.
